@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tema"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:text="CALCULADORA DE IMC"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="300dp"
+        android:layout_marginLeft="35dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Digite seu peso"
+
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Digite sua altura EX:1.70"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Resultado: "
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:onClick="calcularImc"
+        android:text="Calcular"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FD1414"
+        android:textColorLink="#FF0D0D"
+        android:textSize="20sp"
+        app:iconTint="#FF0000" />
+</LinearLayout>
